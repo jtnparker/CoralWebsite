@@ -6,6 +6,11 @@ body {
     background: white;
     /* min-width: 100px; */
   }
+a {
+  justify-self: relative;
+  position: relative;
+  color: #fe391b;
+}
 
 .goodbuy-clicked {
     display: flex;
@@ -350,6 +355,7 @@ align-self: flex-end;
 .coral-privacy-content {
   display: flex;
   flex-direction: column;
+  flex-wrap: row wrap;
 
   
   flex-basis: 40%;
@@ -387,12 +393,17 @@ padding-bottom: 20px;
     
     }
     .coral-privacy-info {
-      display: flex;
+      /* display: flex; */
       font-size: 18px;
       color: white;
       padding-bottom: 30px;
       font-weight: lighter;
       letter-spacing: 1.5px;
+      /* flex-flow: row wrap;
+      justify-content: flex-start;
+      text-align: flex-start;
+      align-items: center;
+      align-content: center; */
       }
     .coral-space-a {
       padding-top: 10px;
@@ -419,3 +430,6 @@ padding-bottom: 20px;
       align-items: flex-end;
       align-self: flex-end;
       }
+.remove-all-styles {
+  all: revert;
+ }
